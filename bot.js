@@ -338,6 +338,18 @@ client.on('message', msg => {
                });
 
 
+////////////////////////////////////// كود يقولك كام شخص متبند من السيرفر
+
+
+               client.on('message', message => {
+                   if (message.content.startsWith(".bans")) {
+                       message.guild.fetchBans()
+                       .then(bans => message.channel.send(`${bans.size} **الاشخــاص الـمتبنده ... من السيرفر ** `))
+                 .catch(console.error);
+               }
+               });
+
+
 
  
  
