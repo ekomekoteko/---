@@ -1,24 +1,6 @@
 const Discord = require('discord.js');
-const devs = ['',''];
-var prefix = "?";
-const adminprefix = "?"
-const db = require('quick.db');
-const client = new Discord.Client();   
-const fs = require("fs"); 
-const canvas = require("canvas");
-const moment = require("moment");  
-const { Client, Util } = require('discord.js');  
-const UserBlocked = new Set(); 
-const jimp = require('jimp');   
-const queue = new Map(); 
-const fetchVideoInfo = require('youtube-info');
-const YouTube = require('simple-youtube-api');
-const ytdl = require('ytdl-core');
-const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const sql = require("sqlite");
-const dateFormat = require('dateformat'); 
-const pretty = require('pretty-ms') 
- 
+const client = new Discord.Client();
+const prefix = "."
  
  
  
