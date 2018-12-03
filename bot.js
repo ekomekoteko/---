@@ -279,7 +279,7 @@ client.on('message', msg => {
           client.on('message' , message => {
       if(message.author.bot) return;
 
-      if(message.content.startsWith(".bk")) {
+      if(message.content.startsWith("?bk")) {
         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
         let args = message.content.split(" ").slice(2);
      var codes = args.join(' ')
