@@ -381,8 +381,84 @@ room.send(tests);
       }
   });
 
+/////////////////////////////// 	
 
-
-
+  client.on('message', message => {
+  if(!message.channel.guild) return;
+  if(message.content.startsWith(prefix + 'move')) {
+   if (message.member.hasPermission("MOVE_MEMBERS")) {
+   if (message.mentions.users.size === 0) {
+   return message.channel.send("``لاستخدام الأمر اكتب هذه الأمر : " +prefix+ "move [USER]``")
+  }
+  if (message.member.voiceChannel != null) {
+   if (message.mentions.members.first().voiceChannel != null) {
+   var authorchannel = message.member.voiceChannelID;
+   var usermentioned = message.mentions.members.first().id;
+  var embed = new Discord.RichEmbed()
+   .setTitle("Succes!")
+   .setColor("#000000")
+   .setDescription(`لقد قمت بسحب <@${usermentioned}> الى الروم الصوتي الخاص بك✅ `)
+  var embed = new Discord.RichEmbed()
+  .setTitle(`You are Moved in ${message.guild.name}`)
+   .setColor("RANDOM")
+  .setDescription(`**<@${message.author.id}> Moved You To His Channel!\nServer --> ${message.guild.name}**`)
+   message.guild.members.get(usermentioned).setVoiceChannel(authorchannel).then(m => message.channel.send(embed))
+  message.guild.members.get(usermentioned).send(embed)
+  } else {
+  message.channel.send("``لا تستطيع سحب "+ message.mentions.members.first() +" `يجب ان يكون هذه العضو في روم صوتي`")
+  }
+  } else {
+   message.channel.send("**``يجب ان تكون في روم صوتي لكي تقوم بسحب العضو أليك``**")
+  }
+  } else {
+  message.react("❌")
+   }}});
  
+
+//////////////////////////////// امر الايدى زى برو بوت 
+
+client.on('message', message => { 
+	var prefix ="?";
+           if (message.content.startsWith(prefix + "id")) {
+     var args = message.content.split(" ").slice(1);
+     let user = message.mentions.users.first();
+     var men = message.mentions.users.first();
+        var heg;
+        if(men) {
+            heg = men
+        } else {
+            heg = message.author
+        }
+      var mentionned = message.mentions.members.first();
+         var h;
+        if(mentionned) {
+            h = mentionned
+        } else {
+            h = message.member
+        }
+               moment.locale('ar-TN');
+      var id = new  Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL) 
+    .setColor("#707070")
+    .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
+    .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
+    .setFooter(`S_C BOT`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setThumbnail(heg.avatarURL);
+    message.channel.send(id)
+}       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  client.login(process.env.BOT_TOKEN);
