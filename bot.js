@@ -7,6 +7,8 @@ const prefix = "?"
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
+/////////////////// الاستريمنج 
  client.on('ready', function(){
     var ms = 10000 ;
     var setGame = [' ?help ','?invite | ?support ' ];
