@@ -1,9 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "."
+const prefix = "?"
  
  
- 
+ client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
  client.on('ready', function(){
     var ms = 10000 ;
     var setGame = [' ?help ','?invite | ?support ' ];
