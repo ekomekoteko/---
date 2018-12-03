@@ -6,6 +6,25 @@ const prefix = "?"
  client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
+/////////////////////////////////////////////////////t7t el Syana
+client.on('message', msg => {
+  if (msg.content ==='?help') {
+    msg.reply('**Update 5%**');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '?suppor') {
+    msg.reply('**Update 5%:tm:**');
+  }
+});
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
 
 
 /////////////////// الاستريمنج 
@@ -28,6 +47,7 @@ const prefix = "?"
 })
  
  
+/////////////////////////////////////////////////////////////////////////
  
  
  
