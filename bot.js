@@ -27,7 +27,7 @@ client.on('message', msg => {
 
 
 
-/////////////////// الاستريمنج 
+/////////////////////////////////////////////////////////////////// الاستريمنج 
  client.on('ready', function(){
     var ms = 10000 ;
     var setGame = [' ?help ','?invite | ?support ' ];
