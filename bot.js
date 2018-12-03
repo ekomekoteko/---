@@ -82,7 +82,7 @@ client.on('message', msg => {
                       SEND_MESSAGES: false
 
                         }).then(() => {
-                            message.reply("**__تم تقفيل الشات__ :white_check_mark: https://cdn.discordapp.com/attachments/519248442804011032/519256944045719582/giphy_1.gif **")
+                            message.reply("**__تم تقفيل الشات__:red_circle:  https://cdn.discordapp.com/attachments/519248442804011032/519256944045719582/giphy_1.gif **")
                         });
                           }
 
@@ -94,7 +94,7 @@ client.on('message', msg => {
                       SEND_MESSAGES: true
 
                         }).then(() => {
-                            message.reply("**__تم فتح الشات__:white_check_mark:** https://cdn.discordapp.com/attachments/519248442804011032/519256944045719582/giphy_1.gif")
+                            message.reply("**__تم فتح الشات__**:large_blue_circle: https://cdn.discordapp.com/attachments/519248442804011032/519256944045719582/giphy_1.gif")
                         });
               }
 
