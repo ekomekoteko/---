@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const devs = ['',''];
-var prefix = "f!";
-const adminprefix = "f!"
+var prefix = "?";
+const adminprefix = "?"
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
