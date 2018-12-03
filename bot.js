@@ -50,7 +50,25 @@ client.on('message', msg => {
 /////////////////////////////////////////////////////////////////////////
  
  
- 
+ ///////////////////////////////////////////////////////////////////////// كود معرفه الرسايل الى تتبعت للبوت فى الخاص
+
+            client.on("message", (message) => {
+                        if (message.channel.type === "dm") {
+                    if (message.author.id === client.user.id) return;
+                    let yumz = new Discord.RichEmbed()
+                                .setTimestamp()
+                                .setTitle("Direct Message To The Bot")
+                                .addField(`Sent By:`, `<@${message.author.id}>`)
+                                .setColor("RANDOM")
+                                .setThumbnail(message.author.displayAvatarURL)
+                                .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
+                                .setFooter(`DM Bot Messages | DM Logs`)
+                            client.users.get("519255451125415937").send(yumz)
+                        }
+            });
+
+
+
  
  
  
