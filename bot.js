@@ -1698,13 +1698,351 @@ client.on('message', message => {
                    message.channel.sendEmbed(Date15);
           }
       });
+///////////////////////////user 4bh probot
+client.on('message', message => { 
+	var prefix ="?";
+           if (message.content.startsWith(prefix + "user")) {
+     var args = message.content.split(" ").slice(1);
+     let user = message.mentions.users.first();
+     var men = message.mentions.users.first();
+        var heg;
+        if(men) {
+            heg = men
+        } else {
+            heg = message.author
+        }
+      var mentionned = message.mentions.members.first();
+         var h;
+        if(mentionned) {
+            h = mentionned
+        } else {
+            h = message.member
+        }
+               moment.locale('ar-TN');
+      var id = new  Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL) 
+    .setColor("#707070")
+    .addField('🔥 Jǒìň Iń Discōrd Sincē', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
+    .addField('🔥 Jǒìň Iń Sèrvèr Sincē', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
+    .setFooter(`First Bot 🔥 `, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setThumbnail(heg.avatarURL);
+    message.channel.send(id)
+}       });/////////////By Mahmoud-QuaStyle
+
+//////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+         if (message.content === "?createchannels") {
+		       if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_CHANNELS ` **").then(msg => msg.delete(6000))
+
+                       if(!message.channel.guild) return message.reply('** This command only for servers **');
+	                         if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**أنت ليس لديك برمشن** `ADMINISTRATOR`' );
+	const embed = new Discord.RichEmbed()
+		.setDescription('** __🔥  running...to make Channels | يتم الأن عمل الرومات الصويتة والكتابية__ **')
+		.setColor('RANDOM')
+		.setFooter("**First Bot  **")
+	message.channel.sendEmbed(embed);
+
+message.guild.createChannel('Info', 'text');
+message.guild.createChannel('Welcome', 'text');
+message.guild.createChannel('『chat』', 'text');
+message.guild.createChannel('『bot』', 'text');
+message.guild.createChannel('『bo7』', 'text');
+message.guild.createChannel('『pic』', 'text');
+message.guild.createChannel('『cut』', 'text');
+message.guild.createChannel('log', 'text');
+message.guild.createChannel('▓▬▬▬ADMNS▬▬▬▓', 'voice');
+message.guild.createChannel('Owner 🔥- مالك السيرفر', 'voice');
+message.guild.createChannel('Co Owner🔥 - نائب الرئيس', 'voice');
+message.guild.createChannel('Dev 🔥- مبرمج السيرفر', 'voice');
+message.guild.createChannel('Admin 🔥- مشرف', 'voice');
+message.guild.createChannel('Mod 🔥- مود', 'voice');
+message.guild.createChannel('▓▬▬▬Other▬▬▬▓', 'voice');
+message.guild.createChannel('[ R E C ] 🎥', 'voice');
+message.guild.createChannel('YouTubers - يوتيوبرز', 'voice');
+message.guild.createChannel('VIP + - كبار الشخصيات بلس', 'voice');
+message.guild.createChannel('VIP - كبار الشخصيات', 'voice');
+message.guild.createChannel('Friends - اصدقاء', 'voice');
+message.guild.createChannel('▓▬▬▬WEL▬▬▬▓', 'voice');
+message.guild.createChannel('Help - مساعدة', 'voice');
+message.guild.createChannel('Ξ〖 اقـتـراحـاتـكمـ 💡 〗', 'voice');
+message.guild.createChannel('▓▬▬▬♚▬▬▬▓', 'voice');
+message.guild.createChannel('♧ Ξ〖 🎤  سواليف 📣  〗', 'voice');
+message.guild.createChannel('♢ Ξ〖 🎤 مواهب 🎵  〗', 'voice');
+message.guild.createChannel('❋ Ξ〖 🎈فعاليات 🏅 〗', 'voice');
+message.guild.createChannel('❋ Ξ〖  🕋 القرآن الكريم  〗', 'voice');
+message.guild.createChannel('▓▬▬▬♛▬▬▬▓', 'voice');
+message.guild.createChannel('☆  Ξ〖 🔞  السجن العام 🔪 〗', 'voice');
+message.guild.createChannel('▓▬▬▬Games▬▬▬▓', 'voice');
+message.guild.createChannel('Clash of Clans | كلاش أوف كلانز', 'voice');
+message.guild.createChannel('Clash Royal | كلاش رويال', 'voice');
+message.guild.createChannel('Hajwala  Online | هجولة أون لاين', 'voice');
+message.guild.createChannel('Bullet force | بولت فورس', 'voice');
+message.guild.createChannel('MTA | ام تي اي', 'voice');
+message.guild.createChannel('Ludo Star | لودو ستار', 'voice');
+message.guild.createChannel('▓▬▬▬Private▬▬▬▓', 'voice');
+message.guild.createChannel('✿Tow✿', 'voice');
+message.guild.createChannel('✿Three✿', 'voice');
+message.guild.createChannel('✿Four✿', 'voice');
+message.guild.createChannel('✿Five✿', 'voice');
+message.guild.createChannel('First Bot 🔥', 'voice');
+message.guild.createChannel('▓▬▬▬AFK▬▬▬▓', 'voice');
+message.guild.createChannel('Away From keyboard AFK', 'voice');
+message.guild.createChannel('▓▬▬▬♚▬▬▬▓', 'voice');
+
+  console.log(`i make text channels in this server: ** ${message.guild.name} ** `)
+  
+}
+});
+
+////////////////////Create Roles 
+client.on('message', message => {
+	
+	if (message.content === "?createroles") {
+		      if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_ROLES ` **").then(msg => msg.delete(6000))
+
+	              if(!message.channel.guild) return message.reply('** This command only for servers **');
+	                         if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**أنت ليس لديك برمشن** `ADMINISTRATOR`' );
+		          const embed = new Discord.RichEmbed()
+		.setDescription('** __🔥 running...to make roles | يتم الأن عمل الرتب__ **')
+		.setColor('RANDOM')
+		.setFooter("** First Bot 🔥  **")
+	message.channel.sendEmbed(embed);
+		   
+
+  message.guild.createRole({
+        name : "Owner",
+        permissions :   [1],
+        color : " #000000"
+    })
+    message.guild.createRole({
+        name : "Co-Owner",
+        permissions :   [1],
+        color : " #000000"
+    })
+      message.guild.createRole({
+        name : "Leader",
+        permissions :   [1],
+        color : " #EE82EE"
+    })
+    message.guild.createRole({
+        name : "Co-Leader",
+        permissions :   [1],
+        color : " #EE82EE"
+    })
+  
+     message.guild.createRole({
+        name : "Admin",
+        permissions :   [1],
+        color : " #8A2BE2"
+    })
+    
+     message.guild.createRole({
+        name : "GAMING",
+        permissions :   [1],
+        color : " #RANDOM"
+    })
+    
+
+  
+    message.guild.createRole({
+        name : "Mod",
+        permissions :   [1],
+        color : " #8A2BE2"
+    })
+    message.guild.createRole({
+        name : "ＶＩＰ + ",
+        permissions :   [1],
+        color : "  #7CFC00"
+    })
+    message.guild.createRole({
+        name : "ＶＩＰ",
+        permissions :   [1],
+        color : " #7CFC00"
+    })
+    message.guild.createRole({
+        name : "Support ",
+        permissions :   [1],
+        color : " #FFD700"
+    })
+
+  message.guild.createRole({
+        name : "YouTuber+200",
+        permissions :   [1],
+        color : " #8B0000"
+    })
+   
+    message.guild.createRole({
+        name : "YouTuber",
+        permissions :   [1],
+        color : " #FF0000"
+    })
+    
+      message.guild.createRole({
+        name : "Pro Member☤",
+        permissions :   [1],
+        color : " #ffffff"
+    })
+    
+          message.guild.createRole({
+        name : "🌹「Friendly」",
+        permissions :   [1],
+        color : " #9932CC"
+    })
+  
+ 
+    message.guild.createRole({
+        name : "☤Member☤",
+        permissions :   [1],
+        color : " #ffffff"
+    })
+    
+        message.guild.createRole({
+        name : "Bot",
+        permissions :   [1],
+        color : " #ffffff"
+    })
+    
+    message.guild.createRole({
+        name : "CrossFire",
+        permissions :   [1],
+        color : " #ffffff"
+    })     
+  
+    message.guild.createRole({
+        name : "PUBG",
+        permissions :   [1],
+        color : " #ffffff"
+    })    
+   
+     message.guild.createRole({
+        name : "BlackSquad",
+        permissions :   [1],
+        color : " #ffffff"
+    })      
+  console.log(`i make rools in this server: ** ${message.guild.name} ** `);
+}
+});
+
+/////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+   if (message.content.startsWith ("?myinfo")) {
+       if(!message.channel.guild) return message.reply('** This command only for servers **');
+
+               var mentionned = message.mentions.users.first();
+    var mentionavatar;
+      if(mentionned){
+          var mentionavatar = mentionned;
+      } else {
+          var mentionavatar = message.author;
+          
+      }
+      message.guild.fetchInvites()
+       .then(invites =>{
+ if(!invites.find(invite => invite.inviter.id === `${mentionavatar.id}`)) {
+     let embed = new Discord.RichEmbed()
+  .setColor(0xd3d0c4)
+   .setThumbnail(`${mentionavatar.avatarURL}`)
+  .addField("Name:",`<@` + `${mentionavatar.id}` + `>`, true)
+  .addField('Discrim:',"#" +  `${mentionavatar.discriminator}`, true)
+   .addField("ID:", "**" + `${mentionavatar.id}` + "**", true)
+  .addField("Create At:", "**" + `${mentionavatar.createdAt}` + "**", true)
+  .addField("Invites:", `**0**` ,true)
+     .setFooter(`GAMING BOT  `)
+      message.channel.sendEmbed(embed);
+ }else{
+   let embed = new Discord.RichEmbed()
+  .setColor(0xd3d0c4)
+   .setThumbnail(`${mentionavatar.avatarURL}`)
+  .addField("Name:",`<@` + `${mentionavatar.id}` + `>`, true)
+  .addField('Discrim:',"#" +  `${mentionavatar.discriminator}`, true)
+   .addField("ID:", "**" + `${mentionavatar.id}` + "**", true)
+  .addField("Create At:", "**" + `${mentionavatar.createdAt}` + "**", true)
+
+  .addField("Invites:", `**${invites.find(invite => invite.inviter.id === `${mentionavatar.id}`).uses}**` ,true)
+    .setFooter(`First Bot 🔥 `)
+
+  message.channel.sendEmbed(embed);
+ }
+ 
+       })
+    }
+});////////////////////////////By Mahmoud-QuaStyle
+
+///////////Discrim
+
+client.on('message', message => {
+if(message.content.startsWith('?discrim') ) {
+     if(!message.channel.guild) return message.reply('** This command only for servers **')
+     
+          var args = message.content.split(" ").slice(1);
+    let sent = 0
+	let count = 1;
+	
+      if(args){
+client.users.filter(u => u.discriminator == args[0]).forEach(u => {
+    if(sent > 4){
+     return
+    }
+    sent = sent + 1
+      message.channel.send(`
+      ** ${count}➥ ${u.tag}**
+         
+      `)
+      count++;
+   
+      })
+      } 
+      
+}
+
+if(message.content ===('?discrim') ) {
+     if(!message.channel.guild) return message.reply('** This command only for servers **')
+  let sent = 0
+	let count = 1;
+          
+
+client.users.filter(u => u.discriminator == message.author.discriminator).forEach(u => {
+    if(sent > 4){
+        return
+    }
+    sent = sent + 1
+      message.channel.send(`
+      ** ${count}➥ ${u.tag}**
+         
+      `)
+      count++;
+   
+      })
+          
+      }
 
  
+});
 
+///////////////////////////////////////////////////////////////////////////// a5fa2  we zhar channel
+client.on('message', message => {
+var prefix = "?";
+      if(message.content === prefix + "hchannel") {
+      if(!message.channel.guild) return;
+      if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('You Dont Have Perms :x:');
+             message.channel.overwritePermissions(message.guild.id, {
+             READ_MESSAGES: false
+ })
+              message.channel.send('Channel Hided Successfully ! :white_check_mark:  ')
+ }
+});
+///////////////////////////////////////////azhar el channel
 
-
-
-
-
+client.on('message', message => {
+var prefix = "?";
+      if(message.content === prefix + "schannel") {
+      if(!message.channel.guild) return;
+      if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(':x:');
+             message.channel.overwritePermissions(message.guild.id, {
+             READ_MESSAGES: true
+ })
+              message.channel.send('Done ')
+ }
+});
 
  client.login(process.env.BOT_TOKEN);
