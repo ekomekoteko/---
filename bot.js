@@ -9,13 +9,13 @@ const prefix = "?"
 /////////////////////////////////////////////////////t7t el Syana
 client.on('message', msg => {
   if (msg.content ==='?help') {
-    msg.reply('**Wait Please For Update 5%**');
+    msg.reply('**Wait Please For Update 6.5%**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === '?suppor') {
-    msg.reply('**Wait Please For Update 5%:tm:**');
+    msg.reply('**Wait Please For Update 6.5%:tm:**');
   }
 });
 
