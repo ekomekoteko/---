@@ -656,7 +656,7 @@ client.on('message', message => {
     if(message.author.bot) return;
     if(message.channel.type === 'dm') return;
    
-    var command = message.content.toLowerCase().split(" ")[0]; // حقوق الفا كوودز Alpha Codes.
+    var command = message.content.toLowerCase().split(" ")[0]; // Mahmoud
     var args = message.content.toLowerCase().split(" ");
     var userM = message.guild.member(message.mentions.users.first() || message.guild.members.find(m => m.id === args[1]));
     var prefix = '?'; // هنا تقدر تغير البرفكس <==================
@@ -962,7 +962,7 @@ client.on("message", message => {
     
     let command = message.content.split(" ")[0];
     
-    if (command === "m!mute") {
+    if (command === "?mute") {
           if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
     let user = message.mentions.users.first();
     let modlog = client.channels.find('name', 'log');
@@ -1005,7 +1005,7 @@ client.on("message", message => {
     
     let command = message.content.split(" ")[0];
     
-    if (command === "m!unmute") {
+    if (command === "?unmute") {
           if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
     let user = message.mentions.users.first();
     let modlog = client.channels.find('name', 'mute-log');
@@ -1073,7 +1073,7 @@ Mal.channel.sendEmbed(embed);
 
 client.on("message", (message) => {
     /// By:Mal Mahmoud + By Mal Galal
-   if (message.content.startsWith("g!new")) {     /// By:Mal Mahmoud + By Mal Galal
+   if (message.content.startsWith("?new")) {     /// By:Mal Mahmoud + By Mal Galal
         const reason = message.content.split(" ").slice(1).join(" ");     /// By:Mal Mahmoud + By Mal Galal
         if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(`This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`);
         if (message.guild.channels.exists("name", "ticket-{message.author.id}" + message.author.id)) return message.channel.send(`You already have a ticket open.`);    /// ALPHA CODES
@@ -1563,7 +1563,7 @@ Sender <@${message.author.id}>                                                  
 
 //////////////////////////////////////////// Code server 
 client.on('message', function(msg) {
-if(msg.content.startsWith ('g!server')) {
+if(msg.content.startsWith ('?server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(msg.guild.iconURL)
