@@ -1107,7 +1107,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("?close")) {
         if (!message.channel.name.startsWith(`ticket`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
  
-       message.channel.send(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`g!confirm\`. This will time out in 10 seconds and be cancelled.`)
+       message.channel.send(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`?confirm\`. This will time out in 10 seconds and be cancelled.`)
            .then((m) => {
                message.channel.awaitMessages(response => response.content === '?confirm', {
                        max: 1,
@@ -1947,7 +1947,7 @@ client.on('message', message => {
    .addField("ID:", "**" + `${mentionavatar.id}` + "**", true)
   .addField("Create At:", "**" + `${mentionavatar.createdAt}` + "**", true)
   .addField("Invites:", `**0**` ,true)
-     .setFooter(`GAMING BOT  `)
+     .setFooter(`First Bot 🔥 `)
       message.channel.sendEmbed(embed);
  }else{
    let embed = new Discord.RichEmbed()
