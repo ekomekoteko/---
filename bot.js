@@ -31,6 +31,9 @@ client.on('guildMemberAdd', member=> {
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","Members"));
     });
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","»MâL"));
+    });
 
 
 
