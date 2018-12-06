@@ -43,7 +43,7 @@ client.on("message", message => {
    🎶 Orders Music: Type:  ?help-music » To Get Orders Music
   🎲 Orders Games: Type:  ?help-games » To Get Orders GAMES
  🎊 Orders Welcome: Type:  ?help-welcomer » To Get Orders Welcomer
-📬 Orders BoradCast: Type: ?help-bc » To Get Orders BoradCast
+📬 Orders BoradCast: Type: ?help-bc » To Get Orders BroadCast
 
   
 		 
