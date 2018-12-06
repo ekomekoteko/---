@@ -15,32 +15,6 @@ const prefix = "?"
 
 
 ///////////test Help da 4ofo 
-client.on("message", message => {
-    if (message.author.bot) return;
-     if (message.content === prefix + "?help") {
-  const embedss2 = new Discord.RichEmbed() 
-      .setColor("RANDOM")
-      .setThumbnail(message.author.avatarURL)
-      .setDescription(`**
-    
-     Check Your DM**`)
-
-		 message.channel.send(`<@${message.author.id}>`, {embed : embedss2});
-  const embed = new Discord.RichEmbed() 
-      .setColor("RANDOM")
-      .setThumbnail(message.author.avatarURL)
-      .setColor("#000000")
-         .setDescription(` 
-  
-		 
-		 
-		 
-		 
-`)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
 
 
 
