@@ -42,11 +42,12 @@ client.on("message", message => {
 🔐 Orders Admin- Type:  **__?help-Admin__** To Get Orders Admin
 🎶 Orders Music- Type:  **__?help-music__**  To Get Orders Music
 🎲 Orders Games- Type:  **__?help-games__** To Get Orders GAMES
-🎊 Orders Welcome- Type:  **__?help-welcomer__** To Get Orders Welcomer
 📬 Orders BoradCast- Type: **__?help-bc__** To Get Orders BroadCast
 🕋 Orders Quran-Typ **__?help-quran__** To Get Orders Quran
 🛡 Orders Protection-Typ **__?help-protection__** To Get Orders Protection
-**By:#- Mál ,ϻά𝔥𝔪𝔬𝔲𝓓-QuaStyle≽ܫ≼#5661||#- Mál , Galal 🔥 ❥ {S}#5222**
+🎊 Orders Welcome- Type:  **__?help-welcomer__** To Get Orders Welcomer
+**By:#- Mál ,ϻά𝔥𝔪𝔬𝔲𝓓-QuaStyle≽ܫ≼#5661
+By:#- Mál , Galal 🔥 ❥ {S}#5222**
 
 
   
@@ -59,23 +60,6 @@ client.on("message", message => {
    
    }
    });
-
-
-////////////////////////////////////////////////////////////  Code law 7ad d5al  server y5od  rotab dy 
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","Member"));
-    });
-
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","عضو"));
-    });
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","Members"));
-    });
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","»MâL"));
-    });
-
 
 
 
