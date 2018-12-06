@@ -38,12 +38,12 @@ client.on("message", message => {
       .setColor("#000000")
          .setDescription(` **Help Fisrt Bot**🔥
 		 
-     🔔 Orders Public: Type: **__?help-public__** To Get Orders Public
-    🔐 Orders Admin: Type:  **__?help-Admin__** To Get Orders Admin
-   🎶 Orders Music: Type:  **__?help-music__**  To Get Orders Music
-  🎲 Orders Games: Type:  **__?help-games__** To Get Orders GAMES
-🎊 Orders Welcome: Type:  **__?help-welcomer__** To Get Orders Welcomer
-📬 Orders BoradCast: Type: **__?help-bc__** To Get Orders BroadCast
+     🔔 Orders Public- Type: **__?help-public__** To Get Orders Public
+    🔐 Orders Admin- Type:  **__?help-Admin__** To Get Orders Admin
+   🎶 Orders Music- Type:  **__?help-music__**  To Get Orders Music
+  🎲 Orders Games- Type:  **__?help-games__** To Get Orders GAMES
+🎊 Orders Welcome- Type:  **__?help-welcomer__** To Get Orders Welcomer  
+📬 Orders BoradCast- Type: **__?help-bc__** To Get Orders BroadCast
 
   
 		 
