@@ -20,7 +20,7 @@ client.on('message', msg => {
 });
 
 
-///////////help test
+//////////////////////////////////////////////Sypo zy ma hwa ana b3del fe sypoo 3ayz t3rf eh el help aktep ???help/////////////////help test
 client.on("message", message => {
     if (message.author.bot) return;
      if (message.content === prefix + "??help") {
