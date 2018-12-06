@@ -30,15 +30,7 @@ client.on("message", message => {
       .setColor("RANDOM")
       .setThumbnail(message.author.avatarURL)
       .setColor("#000000")
-         .setDescription(` **Help Fisrt Bot**🔥
-		 
-🔔 Orders Public: Type:?help-public » To Get Orders Public
-🔐 Orders Admin: Type: ?help-Admin » To Get Orders Admin
-🎶 Orders Music: Type: ?help-music » To Get Orders Music
-🎲 Orders Games: Type: ?help-games » To Get Orders GAMES
-🎊 Orders Welcome: Type: ?help-welcomer »  To Get Orders Welcomer
-📬 Orders BoradCast: Type: ?help-bc » To Get Orders BoradCast
-
+         .setDescription(` 
   
 		 
 		 
@@ -52,7 +44,27 @@ client.on("message", message => {
 
 
 
+client.on("message", message => {
+	var prefix = "???";
+ if (message.content === "?help") {
+  const embed = new Discord.RichEmbed()  
+      .setColor("#000000") 
+      .setDescription(`
+	
+     **Help Fisrt Bot**🔥
+		 
+      🔔 Orders Public: Type:?help-public » To Get Orders Public
+  🔐 Orders Admin: Type: ?help-Admin » To Get Orders Admin
+     🎶 Orders Music: Type: ?help-music » To Get Orders Music
+  🎲 Orders Games: Type: ?help-games » To Get Orders GAMES
+     🎊 Orders Welcome: Type: ?help-welcomer »  To Get Orders Welcomer
+ 📬 Orders BoradCast: Type: ?help-bc » To Get Orders BoradCast
 
+          `)
+   message.channel.sendEmbed(embed)
+    
+   }
+   }); 
 
 
 
